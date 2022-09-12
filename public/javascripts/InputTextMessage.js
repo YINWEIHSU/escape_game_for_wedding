@@ -1,9 +1,10 @@
 class InputTextMessage {
-  constructor({ text, answer, onComplete }) {
+  constructor({ text, answer, answerImage, onComplete }) {
     this.text = text
     this.answer = answer
     this.onComplete = onComplete
     this.element = null
+    this.answerImage = answerImage
   }
 
   createElement() {
@@ -19,28 +20,39 @@ class InputTextMessage {
     </form>
 
     `
-
-    this.element.querySelector('.cancel').addEventListener('click', () => {
+    this.element.querySelector('.cancel').addEventListener('click', (e) => {
+      e.preventDefault()
       this.done()
     })
     this.element.querySelector('.send').addEventListener('click', (e) => {
       const value = this.element.querySelector('.TextInput').value
       e.preventDefault()
       if (value === this.answer) {
-        alert('答對了')
-        this.done()
+        // const box = new MessageBox({
+        //   text: '答對了',
+        //   img: this.answerImage,
+        //   onComplete: () => {return}
+        // })
+        // box.init(document.querySelector('.game-container'))
+
+        this.done(true)
       } else {
-        alert('答錯了')
+        const message = new TextMessage({
+          text: '好像不太對',
+          onComplete: () => {return}
+        })
+        message.init(document.querySelector('.game-container'))
+        this.done(false)
       }
     })
     this.actionListener = new KeyPressListener('Enter', () => {
       this.done()
     })
   }
-  done() {
+  done(solved) {
       this.element.remove()
       this.actionListener.unbind()
-      this.onComplete()
+      this.onComplete(solved)
   }
   init(container) {
     this.createElement()

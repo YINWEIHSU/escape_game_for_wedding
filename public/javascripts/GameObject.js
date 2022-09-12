@@ -7,5 +7,6 @@ class GameObject {
       gameObject: this,
       src: config.src || "/images/characters/npc1.png",
     });
+    this.touching = config.touching || []
   }
 }

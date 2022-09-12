@@ -16,9 +16,19 @@ class OverworldEvent {
     const message = new InputTextMessage({
       text: this.event.text,
       answer: this.event.answer,
-      onComplete: () => resolve()
+      answerImage: this.event.answerImage,
+      onComplete: (solved) => resolve(solved? "SOLVED": "UNSOLVED")
     })
     message.init(document.querySelector('.game-container'))
+  }
+
+  messageBox(resolve) {
+    const box = new MessageBox({
+      text: this.event.text,
+      img: this.event.img,
+      onComplete: () => resolve()
+    })
+    box.init(document.querySelector('.game-container'))
   }
 
   changeMap(resolve) {

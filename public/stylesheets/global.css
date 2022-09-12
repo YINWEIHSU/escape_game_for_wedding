@@ -23,12 +23,12 @@ body {
 .game-container {
   position: relative;
   width: 640px;
-  height: 360px;
+  height: 320px;
   margin: 0px auto;
   outline: 1px solid #fff;
 
   /* 放大背景 */
-  transform: scale(1.5) translateY(30%);
+  transform: scale(1) translateY(30%);
 }
 
 .game-container canvas {
