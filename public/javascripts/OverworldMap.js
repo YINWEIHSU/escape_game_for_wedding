@@ -259,6 +259,327 @@ window.OverworldMaps = {
           }
         ]
       }),
+      tv1: new GameObject({
+        x: utils.withGrid(7),
+        y: utils.withGrid(4),
+        src: "/images/maps/empty.png",
+        touching: [
+          {
+            required: ["fourthOpened"],
+            events: []
+          },
+          {
+            events: [
+              { type: 'messageBox', text: "怎麼會有彩色的亂碼，電視壞掉了嗎，我還寧願看黑白的", img: "/images/maps/television.png" }
+            ]
+          }
+        ]
+      }),
+      tv2: new GameObject({
+        x: utils.withGrid(8),
+        y: utils.withGrid(4),
+        src: "/images/maps/empty.png",
+        touching: [
+          {
+            required: ["fourthOpened"],
+            events: []
+          },
+          {
+            events: [
+              { type: 'messageBox', text: "怎麼會有彩色的亂碼，電視壞掉了嗎，我還寧願看黑白的", img: "/images/maps/television.png" }
+            ]
+          }
+        ]
+      }),
+      tv3: new GameObject({
+        x: utils.withGrid(9),
+        y: utils.withGrid(4),
+        src: "/images/maps/empty.png",
+        touching: [
+          {
+            required: ["fourthOpened"],
+            events: []
+          },
+          {
+            events: [
+              { type: 'messageBox', text: "怎麼會有彩色的亂碼，電視壞掉了嗎，我還寧願看黑白的", img: "/images/maps/television.png" }
+            ]
+          }
+        ]
+      }),
+      tv4: new GameObject({
+        x: utils.withGrid(10),
+        y: utils.withGrid(4),
+        src: "/images/maps/empty.png",
+        touching: [
+          {
+            required: ["fourthOpened"],
+            events: []
+          },
+          {
+            events: [
+              { type: 'messageBox', text: "怎麼會有彩色的亂碼，電視壞掉了嗎，我還寧願看黑白的", img: "/images/maps/television.png" }
+            ]
+          }
+        ]
+      }),
+      tv5: new GameObject({
+        x: utils.withGrid(11),
+        y: utils.withGrid(4),
+        src: "/images/maps/empty.png",
+        touching: [
+          {
+            required: ["fourthOpened"],
+            events: []
+          },
+          {
+            events: [
+              { type: 'messageBox', text: "怎麼會有彩色的亂碼，電視壞掉了嗎，我還寧願看黑白的", img: "/images/maps/television.png" }
+            ]
+          }
+        ]
+      }),
+      tv6: new GameObject({
+        x: utils.withGrid(7),
+        y: utils.withGrid(5),
+        src: "/images/maps/empty.png",
+        touching: [
+          {
+            required: ["fourthOpened"],
+            events: []
+          },
+          {
+            events: [
+              { type: 'messageBox', text: "怎麼會有彩色的亂碼，電視壞掉了嗎，我還寧願看黑白的", img: "/images/maps/television.png" }
+            ]
+          }
+        ]
+      }),
+      tv7: new GameObject({
+        x: utils.withGrid(8),
+        y: utils.withGrid(5),
+        src: "/images/maps/empty.png",
+        touching: [
+          {
+            required: ["fourthOpened"],
+            events: []
+          },
+          {
+            events: [
+              { type: 'messageBox', text: "怎麼會有彩色的亂碼，電視壞掉了嗎，我還寧願看黑白的", img: "/images/maps/television.png" }
+            ]
+          }
+        ]
+      }),
+      tv8: new GameObject({
+        x: utils.withGrid(9),
+        y: utils.withGrid(5),
+        src: "/images/maps/empty.png",
+        touching: [
+          {
+            required: ["fourthOpened"],
+            events: []
+          },
+          {
+            events: [
+              { type: 'messageBox', text: "怎麼會有彩色的亂碼，電視壞掉了嗎，我還寧願看黑白的", img: "/images/maps/television.png" }
+            ]
+          }
+        ]
+      }),
+      tv9: new GameObject({
+        x: utils.withGrid(10),
+        y: utils.withGrid(5),
+        src: "/images/maps/empty.png",
+        touching: [
+          {
+            required: ["fourthOpened"],
+            events: []
+          },
+          {
+            events: [
+              { type: 'messageBox', text: "怎麼會有彩色的亂碼，電視壞掉了嗎，我還寧願看黑白的", img: "/images/maps/television.png" }
+            ]
+          }
+        ]
+      }),
+      tv10: new GameObject({
+        x: utils.withGrid(11),
+        y: utils.withGrid(5),
+        src: "/images/maps/empty.png",
+        touching: [
+          {
+            required: ["fourthOpened"],
+            events: []
+          },
+          {
+            events: [
+              { type: 'messageBox', text: "怎麼會有彩色的亂碼，電視壞掉了嗎，我還寧願看黑白的", img: "/images/maps/television.png" }
+            ]
+          }
+        ]
+      }),
+      tv11: new GameObject({
+        x: utils.withGrid(7),
+        y: utils.withGrid(6),
+        src: "/images/maps/empty.png",
+        touching: [
+          {
+            required: ["fourthOpened"],
+            events: []
+          },
+          {
+            events: [
+              { type: 'messageBox', text: "怎麼會有彩色的亂碼，電視壞掉了嗎，我還寧願看黑白的", img: "/images/maps/television.png" }
+            ]
+          }
+        ]
+      }),
+      tv12: new GameObject({
+        x: utils.withGrid(8),
+        y: utils.withGrid(6),
+        src: "/images/maps/empty.png",
+        touching: [
+          {
+            required: ["fourthOpened"],
+            events: []
+          },
+          {
+            events: [
+              { type: 'messageBox', text: "怎麼會有彩色的亂碼，電視壞掉了嗎，我還寧願看黑白的", img: "/images/maps/television.png" }
+            ]
+          }
+        ]
+      }),
+      tv13: new GameObject({
+        x: utils.withGrid(9),
+        y: utils.withGrid(6),
+        src: "/images/maps/empty.png",
+        touching: [
+          {
+            required: ["fourthOpened"],
+            events: []
+          },
+          {
+            events: [
+              { type: 'messageBox', text: "怎麼會有彩色的亂碼，電視壞掉了嗎，我還寧願看黑白的", img: "/images/maps/television.png" }
+            ]
+          }
+        ]
+      }),
+      tv14: new GameObject({
+        x: utils.withGrid(10),
+        y: utils.withGrid(6),
+        src: "/images/maps/empty.png",
+        touching: [
+          {
+            required: ["fourthOpened"],
+            events: []
+          },
+          {
+            events: [
+              { type: 'messageBox', text: "怎麼會有彩色的亂碼，電視壞掉了嗎，我還寧願看黑白的", img: "/images/maps/television.png" }
+            ]
+          }
+        ]
+      }),
+      tv15: new GameObject({
+        x: utils.withGrid(11),
+        y: utils.withGrid(6),
+        src: "/images/maps/empty.png",
+        touching: [
+          {
+            required: ["fourthOpened"],
+            events: []
+          },
+          {
+            events: [
+              { type: 'messageBox', text: "怎麼會有彩色的亂碼，電視壞掉了嗎，我還寧願看黑白的", img: "/images/maps/television.png" }
+            ]
+          }
+        ]
+      }),
+      tv16: new GameObject({
+        x: utils.withGrid(7),
+        y: utils.withGrid(7),
+        src: "/images/maps/empty.png",
+        touching: [
+          {
+            required: ["fourthOpened"],
+            events: []
+          },
+          {
+            events: [
+              { type: 'messageBox', text: "怎麼會有彩色的亂碼，電視壞掉了嗎，我還寧願看黑白的", img: "/images/maps/television.png" }
+            ]
+          }
+        ]
+      }),
+      tv17: new GameObject({
+        x: utils.withGrid(8),
+        y: utils.withGrid(7),
+        src: "/images/maps/empty.png",
+        touching: [
+          {
+            required: ["fourthOpened"],
+            events: []
+          },
+          {
+            events: [
+              { type: 'messageBox', text: "怎麼會有彩色的亂碼，電視壞掉了嗎，我還寧願看黑白的", img: "/images/maps/television.png" }
+            ]
+          }
+        ]
+      }),
+      tv18: new GameObject({
+        x: utils.withGrid(9),
+        y: utils.withGrid(7),
+        src: "/images/maps/empty.png",
+        touching: [
+          {
+            required: ["fourthOpened"],
+            events: []
+          },
+          {
+            events: [
+              { type: 'messageBox', text: "怎麼會有彩色的亂碼，電視壞掉了嗎，我還寧願看黑白的", img: "/images/maps/television.png" }
+            ]
+          }
+        ]
+      }),
+      tv19: new GameObject({
+        x: utils.withGrid(10),
+        y: utils.withGrid(7),
+        src: "/images/maps/empty.png",
+        touching: [
+          {
+            required: ["fourthOpened"],
+            events: []
+          },
+          {
+            events: [
+              { type: 'messageBox', text: "怎麼會有彩色的亂碼，電視壞掉了嗎，我還寧願看黑白的", img: "/images/maps/television.png" }
+            ]
+          }
+        ]
+      }),
+      tv20: new GameObject({
+        x: utils.withGrid(11),
+        y: utils.withGrid(7),
+        src: "/images/maps/empty.png",
+        touching: [
+          {
+            required: ["fourthOpened"],
+            events: []
+          },
+          {
+            events: [
+              { type: 'messageBox', text: "怎麼會有彩色的亂碼，電視壞掉了嗎，我還寧願看黑白的", img: "/images/maps/television.png" }
+            ]
+          }
+        ]
+      }),
+
     }
   }
 }
