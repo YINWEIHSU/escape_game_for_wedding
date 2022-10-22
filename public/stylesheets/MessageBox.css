@@ -4,7 +4,7 @@
   right: 0;
   top: 25px;
   margin: auto;
-  height: 250px;
+  /* height: 250px; */
   width: 400px;
   padding: 4px;
   background: var(--menu-background);

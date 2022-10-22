@@ -1,9 +1,10 @@
 class MessageBox {
-  constructor({ text, img, onComplete }) {
+  constructor({ text, img, onComplete, width }) {
     this.text = text
     this.img = img
     this.onComplete = onComplete
     this.element = null
+    this.width = width || 300
   }
 
   createElement() {
@@ -12,7 +13,7 @@ class MessageBox {
 
     this.element.innerHTML = `
       <p class="TextMessage_p">${this.text}</p>  
-      <img class="MessageBox_img" src=${this.img} with="300" heigh="200" alt="一張圖片">
+      <img class="MessageBox_img" src=${this.img} width="${this.width}" alt="一張圖片">
       <button class="InputTextMessage_button cancel">Close</button>
     `
 

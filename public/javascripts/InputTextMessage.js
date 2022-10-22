@@ -25,7 +25,9 @@ class InputTextMessage {
       this.done()
     })
     this.element.querySelector('.send').addEventListener('click', (e) => {
-      const value = this.element.querySelector('.TextInput').value
+      let value = this.element.querySelector('.TextInput').value
+      value = value.toUpperCase()
+      console.log(value)
       e.preventDefault()
       if (value === this.answer) {
         // const box = new MessageBox({

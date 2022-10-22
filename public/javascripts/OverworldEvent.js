@@ -26,7 +26,8 @@ class OverworldEvent {
     const box = new MessageBox({
       text: this.event.text,
       img: this.event.img,
-      onComplete: () => resolve()
+      onComplete: () => resolve(),
+      width: this.event.width || null
     })
     box.init(document.querySelector('.game-container'))
   }

@@ -46,7 +46,16 @@ class Overworld {
     })
   }
 
-  init() {
+  async init() {
+    const container = document.querySelector(".game-container")
+    
+    // Show title screen
+    this.titleScreen = new TitleScreen({
+      progress: this.progress
+    })
+
+    const useSaveFile = await this.titleScreen.init(container)
+
     this.startMap(window.OverworldMaps['firstScene'])
     this.bindActionInput()
     this.startGameLoop()
