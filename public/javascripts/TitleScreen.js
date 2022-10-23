@@ -43,7 +43,7 @@ class TitleScreen {
     return new Promise(resolve => {
       this.createElement()
       container.appendChild(this.element)
-      this.keyboardMenu = new KeyboardMenu()
+      this.keyboardMenu = new StartMenu()
       this.keyboardMenu.init(this.element)
       this.keyboardMenu.setOptions(this.getOptions(resolve))
     })
