@@ -59,18 +59,7 @@ class Overworld {
     this.startMap(window.OverworldMaps['firstScene'])
     this.bindActionInput()
     this.startGameLoop()
-    // this.element.addEventListener('click', (e) => {
-    //  console.log(e.offsetX, e.offsetY) 
-    //   console.log(e.clientX - this.rect.left, e.clientY - this.rect.top)
-    //   if (e.clientX - this.rect.left > 64 && e.clientX - this.rect.left < 128 && e.clientY - this.rect.top > 64 && e.clientY - this.rect.left < 128) {
-    //     this.map.startCutscene([{type: 'inputTextMessage', text: "輸入解答", answer: "1234"}])
-    //   }
-    // })
-    // this.map.startCutscene([
-    //   { type: 'textMessage', text: "Hello" },
-    //   { type: 'textMessage', text: "World" },
-    //   { type: 'inputTextMessage', text: "輸入解答", answer: "1234" }
-    // ])
+    this.map.startCutscene([{type: 'textMessage', text: '前情提要'}])
   }
 
 }

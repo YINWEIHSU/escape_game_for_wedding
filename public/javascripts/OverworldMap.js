@@ -89,7 +89,11 @@ window.OverworldMaps = {
           {
             events: [
               { type: 'messageBox', text: "是一組數字鎖電子鎖，為什麼會是鎖裡面的人", img: "/images/maps/lockAll.png", width: 200 },
-              { type: 'inputTextMessage', text: '請輸入密碼:', answer: '1730', answerImage: "/images/maps/lockAll.png" }
+              { type: 'inputTextMessage', text: '請輸入密碼:', answer: '1730', answerImage: "/images/maps/lockAll.png" },
+              { type: "addStoryFlag", flag: "finalOpened" },
+              { type: 'changeMap', map: 'finishScene' },
+              { type: "textMessage", text: "恭喜成功脫出" },
+              { type: "textMessage", text: "咱們到時候見" }
             ]
           }
         ]
@@ -298,7 +302,7 @@ window.OverworldMaps = {
           }
         ]
       })
-      
+
     }
   },
   thirdScene: {
@@ -478,7 +482,7 @@ window.OverworldMaps = {
           },
           {
             events: [
-              { type: 'textMessage', text: "現在不是打電動的時候！"}
+              { type: 'textMessage', text: "現在不是打電動的時候！" }
             ]
           }
         ]
@@ -501,5 +505,10 @@ window.OverworldMaps = {
       })
 
     }
+  },
+  finishScene: {
+    id: "finishScene",
+    lowerSrc: "/images/maps/finalScene.png",
+    gameObjects: {}
   }
 }
