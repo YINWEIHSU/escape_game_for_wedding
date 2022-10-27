@@ -16,8 +16,10 @@ class OverworldEvent {
     const message = new InputTextMessage({
       text: this.event.text,
       answer: this.event.answer,
-      answerImage: this.event.answerImage,
-      onComplete: (solved) => resolve(solved? "SOLVED": "UNSOLVED")
+      answerText: this.event.answerText,
+      img: this.event.img,
+      width: this.event.width,
+      onComplete: (solved) => resolve(solved ? "SOLVED" : "UNSOLVED")
     })
     message.init(document.querySelector('.game-container'))
   }
@@ -45,12 +47,15 @@ class OverworldEvent {
 
   pause(resolve) {
     this.map.isPaused = true
-    const menu = new PauseMenu({
+    const menu = new ClueMenu({
       progress: this.map.overworld.progress,
-      onComplete: () => {
+      content: this.event.content,
+      isFinal: this.event.isFinal || false,
+      onComplete: async () => {
         resolve()
+        await utils.wait(200)
         this.map.isPaused = false
-        this.map.overworld.startGameLoop()
+        // this.map.overworld.startGameLoop()
       }
     })
     menu.init(document.querySelector('.game-container'))
@@ -58,6 +63,7 @@ class OverworldEvent {
 
   addStoryFlag(resolve) {
     window.playerState.storyFlags[this.event.flag] = true
+    this.map.overworld.progress.save()
     resolve()
   }
 

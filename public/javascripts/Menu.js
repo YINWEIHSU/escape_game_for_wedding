@@ -1,4 +1,4 @@
-class StartMenu {
+class Menu {
   constructor(config = {}) {
     this.options = []; //set by updater method
     this.up = null;

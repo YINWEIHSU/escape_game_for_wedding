@@ -4,7 +4,7 @@ class TitleScreen {
   }
 
   getOptions(resolve) {
-    // const safeFile = this.progress.getSaveFile()
+    const safeFile = this.progress.getSaveFile()
     return [
       {
         label: "Start Game",
@@ -14,14 +14,14 @@ class TitleScreen {
           resolve()
         }
       },
-      // safeFile ? {
-      //   label: "Continue Game",
-      //   description: "Resume your adventure",
-      //   handler: () => {
-      //     this.close()
-      //     resolve(safeFile)
-      //   }
-      // } : null
+      safeFile ? {
+        label: "Continue Game",
+        description: "Resume your adventure",
+        handler: () => {
+          this.close()
+          resolve(safeFile)
+        }
+      } : null
     ].filter(v => v)
   }
 
@@ -43,7 +43,7 @@ class TitleScreen {
     return new Promise(resolve => {
       this.createElement()
       container.appendChild(this.element)
-      this.keyboardMenu = new StartMenu()
+      this.keyboardMenu = new Menu()
       this.keyboardMenu.init(this.element)
       this.keyboardMenu.setOptions(this.getOptions(resolve))
     })
