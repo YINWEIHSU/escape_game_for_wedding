@@ -323,7 +323,7 @@ window.OverworldMaps = {
           },
           {
             events: [
-              { type: 'messageBox', text: "[冰箱下層]吐司還剩六片啊，吃的完嗎...", img: "/images/maps/refrig-down.png" }
+              { type: 'messageBox', text: "[冰箱下層]吐司還剩好多啊，吃的完嗎...", img: "/images/maps/refrig-down.png" }
             ]
           }
         ]
@@ -359,7 +359,7 @@ window.OverworldMaps = {
           },
           {
             events: [
-              { type: "textMessage", text: "是我最愛吃的高麗菜" }
+              { type: "textMessage", text: "是一顆我最愛吃的高麗菜" }
             ]
           }
         ]

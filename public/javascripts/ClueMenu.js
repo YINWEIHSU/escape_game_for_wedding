@@ -111,7 +111,7 @@ window.Clues = {
       description: '我知道物品代表的數字了，接下來該怎麼做？'
     },
     {
-      content: '3順時針90度是W，8可以拆成EI',
+      content: '3順時針90度是W，對稱看是E，1就是I',
       description: '我還是解不出來，直接告訴我答案吧'
     },
     {
