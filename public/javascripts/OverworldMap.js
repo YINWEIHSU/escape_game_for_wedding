@@ -4,10 +4,6 @@ class OverworldMap {
     this.cutsceneSpaces = config.cutsceneSpaces || {}
     this.lowerImage = new Image()
     this.lowerImage.src = config.lowerSrc
-
-    // this.upperImage = new Image()
-    // this.upperImage.src = config.upperSrc
-
     this.isCutscenePlaying = false
     this.isPaused = false
   }
@@ -15,21 +11,15 @@ class OverworldMap {
     ctx.drawImage(this.lowerImage, 0, 0)
   }
 
-  // drawUpperImage(ctx) {
-  //   ctx.drawImage(this.upperImage, 0, 0)
-  // }
-
-  checkForActionCutscene(event, rect, bodyRect) {
+  checkForActionCutscene(event) {
     const match = Object.values(this.gameObjects).find(object => {
       const x = event.layerX + 1
       const y = event.layerY - 95
       const xMaxIndex = object.x.length - 1
       const yMaxIndex = object.y.length - 1
-      // console.log(rect.left, rect.top, bodyRect.left, bodyRect.top, event.layerX, event.layerY)
       if (x > object.x[0] && x < object.x[xMaxIndex] + 32 && y > object.y[0] && y < object.y[yMaxIndex] + 32) {
         return true
       }
-
     })
     if (!this.isCutscenePlaying && !this.isPaused && match && match.touching.length) {
       const relevantScenario = match.touching.find(scenario => {

@@ -5,15 +5,12 @@ class Overworld {
     this.canvas.width = 640
     this.canvas.height = 320
     this.ctx = this.canvas.getContext("2d")
-    this.rect = this.canvas.getBoundingClientRect()
-    this.bodyRect = document.body.getBoundingClientRect()
     this.map = null
   }
-  startMap(mapConfig, heroInitialState = null) {
+  startMap(mapConfig) {
     // 初始地圖
     this.map = new OverworldMap(mapConfig)
     this.map.overworld = this
-    // this.map.mountObjects()
     this.progress.mapId = mapConfig.id
   }
   startGameLoop() {
@@ -43,7 +40,7 @@ class Overworld {
   bindActionInput() {
 
     this.element.addEventListener('click', (event) => {
-      this.map.checkForActionCutscene(event, this.rect, this.bodyRect)
+      this.map.checkForActionCutscene(event)
     })
   }
 

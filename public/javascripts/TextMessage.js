@@ -26,6 +26,7 @@ class TextMessage {
       this.done()
     })
   }
+
   done() {
     if(this.revealingText.isDone) {
       this.element.remove()
@@ -34,8 +35,8 @@ class TextMessage {
     } else {
       this.revealingText.wrapToDone()
     }
-    
   }
+  
   init(container) {
     this.createElement()
     container.appendChild(this.element)

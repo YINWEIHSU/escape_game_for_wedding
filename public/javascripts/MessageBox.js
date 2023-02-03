@@ -10,7 +10,6 @@ class MessageBox {
   createElement() {
     this.element = document.createElement('div')
     this.element.classList.add('MessageBox')
-
     this.element.innerHTML = `
       <p class="TextMessage_p">${this.text}</p>  
       <img class="MessageBox_img" src=${this.img} width="${this.width}" alt="一張圖片">

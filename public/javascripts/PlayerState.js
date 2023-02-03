@@ -14,6 +14,5 @@ class PlayerState {
       "finalSceneClue": 0
     }
   }
-
 }
 window.playerState = new PlayerState()

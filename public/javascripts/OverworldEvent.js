@@ -55,7 +55,6 @@ class OverworldEvent {
         resolve()
         await utils.wait(200)
         this.map.isPaused = false
-        // this.map.overworld.startGameLoop()
       }
     })
     menu.init(document.querySelector('.game-container'))

@@ -22,7 +22,6 @@ class InputTextMessage {
     <button class="InputTextMessage_button cancel">Cancel</button>
     <button class="InputTextMessage_button send">Send</button>
     </form>
-
     `
     this.element.querySelector('.cancel').addEventListener('click', (e) => {
       e.preventDefault()

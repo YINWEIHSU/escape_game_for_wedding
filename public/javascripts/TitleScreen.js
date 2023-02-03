@@ -31,7 +31,6 @@ class TitleScreen {
     this.element.innerHTML = (`
       <img class="TitleScreen_logo" src="/images/logo.png" alt="Pizza Legends" />
     `)
-
   }
 
   close() {
@@ -48,5 +47,4 @@ class TitleScreen {
       this.keyboardMenu.setOptions(this.getOptions(resolve))
     })
   }
-
 }
