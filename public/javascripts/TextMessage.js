@@ -40,5 +40,11 @@ class TextMessage {
     this.createElement()
     container.appendChild(this.element)
     this.revealingText.init()
+    const parent = this.element.parentNode
+    parent.addEventListener('click', (e) => {
+      if (e.target.id === 'canvas') {
+        this.done()      
+      }
+    })
   }
 }

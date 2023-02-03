@@ -66,5 +66,11 @@ class InputTextMessage {
   init(container) {
     this.createElement()
     container.appendChild(this.element)
+    const parent = this.element.parentNode
+    parent.addEventListener('click', (e) => {
+      if (e.target.id === 'canvas') {
+        this.done()
+      }
+    })
   }
 }

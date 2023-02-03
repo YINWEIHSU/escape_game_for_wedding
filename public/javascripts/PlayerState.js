@@ -1,6 +1,7 @@
 class PlayerState {
   constructor() {
     this.storyFlags = {
+      "explained": false,
       "firstOpened": false,
       "secondOpened": false,
       "thirdOpened": false,

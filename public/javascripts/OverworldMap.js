@@ -107,11 +107,13 @@ window.OverworldMaps = {
         touching: [
           {
             events: [
-              { type: 'inputTextMessage', text: '是一組數字鎖電子鎖', answerText: '請輸入四位密碼:', answer: '1730', img: "/images/maps/lockAll.png", width: 200 },
+              { type: 'inputTextMessage', text: '是一組數字鎖電子鎖', answerText: '請輸入四位密碼:', answer: '1745', img: "/images/maps/lockAll.png", width: 200 },
               { type: "addStoryFlag", flag: "finalOpened" },
               { type: 'changeMap', map: 'finishScene' },
               { type: "textMessage", text: "恭喜成功脫出" },
-              { type: "textMessage", text: "咱們到時候見" }
+              { type: "textMessage", text: "這次的答案分別是：新人的名字、婚禮日期" },
+              { type: "textMessage", text: "餐廳座標、Dress Code顏色以及報到時間" },
+              { type: "textMessage", text: "非常期待與大家碰面，咱們到時候見" }
             ]
           }
         ]
@@ -272,7 +274,7 @@ window.OverworldMaps = {
           },
           {
             events: [
-              { type: 'messageBox', text: "看不出原本的內容，最討厭這種沒撕乾淨的牆面了", img: "/images/maps/paper.png" }
+              { type: 'messageBox', text: "沒撕乾淨的海報，如果忘記數字或英文怎麼寫應該可以參考", img: "/images/maps/paper.png" }
             ]
           }
         ]
@@ -321,13 +323,13 @@ window.OverworldMaps = {
           },
           {
             events: [
-              { type: 'messageBox', text: "[冰箱下層]喝罐啤酒感覺也不錯", img: "/images/maps/refrig-down.png" }
+              { type: 'messageBox', text: "[冰箱下層]吐司還剩六片啊，吃的完嗎...", img: "/images/maps/refrig-down.png" }
             ]
           }
         ]
       }),
       dinner: new GameObject({
-        x: [utils.withGrid(5), utils.withGrid(12)],
+        x: [utils.withGrid(5), utils.withGrid(8)],
         y: [utils.withGrid(5), utils.withGrid(6)],
         src: "/images/maps/empty.png",
         touching: [
@@ -340,6 +342,60 @@ window.OverworldMaps = {
           {
             events: [
               { type: "textMessage", text: "看起來是準備到一半的食材，不知道會做成什麼料理" }
+            ]
+          }
+        ]
+      }),
+      cabbage: new GameObject({
+        x: [utils.withGrid(9)],
+        y: [utils.withGrid(6)],
+        src: "/images/maps/empty.png",
+        touching: [
+          {
+            required: ["secondOpened"],
+            events: [
+              { type: "textMessage", text: "越看越餓啊..." }
+            ]
+          },
+          {
+            events: [
+              { type: "textMessage", text: "是我最愛吃的高麗菜" }
+            ]
+          }
+        ]
+      }),
+      milk: new GameObject({
+        x: [utils.withGrid(10), utils.withGrid(11)],
+        y: [utils.withGrid(6)],
+        src: "/images/maps/empty.png",
+        touching: [
+          {
+            required: ["secondOpened"],
+            events: [
+              { type: "textMessage", text: "越看越餓啊..." }
+            ]
+          },
+          {
+            events: [
+              { type: "textMessage", text: "是兩罐牛奶，不冰起來會壞掉吧" }
+            ]
+          }
+        ]
+      }),
+      sandwich: new GameObject({
+        x: [utils.withGrid(12)],
+        y: [utils.withGrid(6)],
+        src: "/images/maps/empty.png",
+        touching: [
+          {
+            required: ["secondOpened"],
+            events: [
+              { type: "textMessage", text: "越看越餓啊..." }
+            ]
+          },
+          {
+            events: [
+              { type: "textMessage", text: "是三明治，每次都覺得兩片吐司吃得好飽" }
             ]
           }
         ]
@@ -617,7 +673,7 @@ window.OverworldMaps = {
           },
           {
             events: [
-              { type: 'messageBox', text: "怎麼會有彩色的亂碼，電視壞掉了嗎，我還寧願看黑白的", img: "/images/maps/television.png" }
+              { type: 'messageBox', text: "怎麼會是亂碼，電視壞掉了嗎？", img: "/images/maps/television.png" }
             ]
           }
         ]

@@ -103,7 +103,7 @@ window.Clues = {
   ],
   secondScene: [
     {
-    content: '藏寶箱上的兩樣物品都找到了嗎？',
+    content: '藏寶箱上的兩樣物品都確定數量了嗎？',
     description: '我毫無頭緒，該從哪裡開始？'
     },
     {
@@ -125,7 +125,7 @@ window.Clues = {
       description: '我毫無頭緒，該從哪裡開始？'
     },
     {
-      content: '座標右邊有一個小人，好像也有關係。',
+      content: '地圖下面有一個小人，跟照片的人有關係嗎？',
       description: '我已經找到對應的物品了，然後呢？'
     },
     {
@@ -169,7 +169,7 @@ window.Clues = {
       description: '我還是解不出來，直接告訴我答案吧'
     },
     {
-      content: '答案是開席的時間(1730)，記得準時抵達哦！',
+      content: '答案是報到的時間(1745)，請準時抵達哦！',
       description: '沒有更多提示啦'
     }
   ]

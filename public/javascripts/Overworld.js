@@ -83,7 +83,8 @@ class Overworld {
         { type: 'textMessage', text: '需要透過說明文字或圖片的線索解開每張場景的謎題' },
         { type: 'textMessage', text: '輸入正確答案後可通關' },
         { type: 'textMessage', text: '如果卡關了可以點擊右上角觀看提示，或是跟尹維或張濰求救XD' },
-        { type: 'textMessage', text: '時間不多了，我們趕緊就開始吧' }
+        { type: 'textMessage', text: '時間不多了，我們趕緊就開始吧' },
+        { type: "addStoryFlag", flag: "explained" }
       ])
     }
   }
