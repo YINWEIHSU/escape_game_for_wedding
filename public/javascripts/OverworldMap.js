@@ -1,12 +1,12 @@
 class OverworldMap {
   constructor(config) {
-    this.gameObjects = config.gameObjects;
+    this.gameObjects = config.gameObjects
     this.cutsceneSpaces = config.cutsceneSpaces || {}
-    this.lowerImage = new Image();
-    this.lowerImage.src = config.lowerSrc;
+    this.lowerImage = new Image()
+    this.lowerImage.src = config.lowerSrc
 
-    // this.upperImage = new Image();
-    // this.upperImage.src = config.upperSrc;
+    // this.upperImage = new Image()
+    // this.upperImage.src = config.upperSrc
 
     this.isCutscenePlaying = false
     this.isPaused = false

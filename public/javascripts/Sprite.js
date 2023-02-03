@@ -2,20 +2,20 @@ class Sprite {
   constructor(config) {
 
     //Set up the image
-    this.image = new Image();
-    this.image.src = config.src;
+    this.image = new Image()
+    this.image.src = config.src
     this.image.onload = () => {
-      this.isLoaded = true;
+      this.isLoaded = true
     }
 
     //Shadow
-    this.shadow = new Image();
-    this.useShadow = true; //config.useShadow || false
+    this.shadow = new Image()
+    this.useShadow = true //config.useShadow || false
     if (this.useShadow) {
-      this.shadow.src = "/images/maps/empty.png";
+      this.shadow.src = "/images/maps/empty.png"
     }
     this.shadow.onload = () => {
-      this.isShadowLoaded = true;
+      this.isShadowLoaded = true
     }
 
     //Configure Animation & Initial State
@@ -24,18 +24,18 @@ class Sprite {
         [0,0]
       ]
     }
-    this.currentAnimation = config.currentAnimation || "idleDown";
-    this.currentAnimationFrame = 0;
+    this.currentAnimation = config.currentAnimation || "idleDown"
+    this.currentAnimationFrame = 0
 
     //Reference the game object
-    this.gameObject = config.gameObject;
+    this.gameObject = config.gameObject
   }
 
   draw(ctx) {
-    const x = this.gameObject.x;
-    const y = this.gameObject.y;
+    const x = this.gameObject.x
+    const y = this.gameObject.y
 
-    this.isShadowLoaded && ctx.drawImage(this.shadow, x, y);
+    this.isShadowLoaded && ctx.drawImage(this.shadow, x, y)
     this.isLoaded && ctx.drawImage(this.image,
       0,0,
       32,32,
