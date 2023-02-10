@@ -64,7 +64,7 @@ class Overworld {
     this.startGameLoop()
     if (!useSaveFile) {
       this.map.startCutscene([
-        { type: 'textMessage', text: '今天是婚禮的日子，一覺醒來發現張濰不見蹤影' },
+        { type: 'textMessage', text: '今天是婚禮的日子，一覺醒來發現新娘不見蹤影' },
         { type: 'textMessage', text: '只在桌上發現一張紙條' },
         { type: 'textMessage', text: '「我把房間的鎖換掉了，你一定可以解開的吧」' },
         { type: 'textMessage', text: '「我可是不會嫁給笨蛋的哦：）」' },
@@ -79,7 +79,7 @@ class Overworld {
         { type: 'textMessage', text: '對話視窗關閉前點擊其他地方是沒有效果的' },
         { type: 'textMessage', text: '需要透過說明文字或圖片的線索解開每張場景的謎題' },
         { type: 'textMessage', text: '輸入正確答案後可通關' },
-        { type: 'textMessage', text: '如果卡關了可以點擊右上角觀看提示，或是跟尹維或張濰求救XD' },
+        { type: 'textMessage', text: '如果卡關了可以點擊右上角觀看提示' },
         { type: 'textMessage', text: '時間不多了，我們趕緊就開始吧' },
         { type: "addStoryFlag", flag: "explained" }
       ])

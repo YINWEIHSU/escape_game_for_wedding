@@ -513,7 +513,7 @@ window.OverworldMaps = {
           },
           {
             events: [
-              { type: 'messageBox', text: "是張濰朋友們的合照", img: "/images/maps/photo1.png", width: 200 }
+              { type: 'messageBox', text: "是老婆朋友們的合照", img: "/images/maps/photo1.png", width: 200 }
             ]
           }
         ]
